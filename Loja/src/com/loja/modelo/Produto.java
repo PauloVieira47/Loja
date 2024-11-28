@@ -15,7 +15,7 @@ public class Produto {
         this.categoria = categoria;
     }
 
-    // Getters e setters
+    // Gets e sets
     public Integer getId() {
         return id; }
     public void setId(Integer id) {
@@ -23,11 +23,12 @@ public class Produto {
 
     public String getNome() {
         return nome; }
-    public void setNome(String nome) { this.nome = nome; }
-
-    public double getPreco() { return preco; }
-    public void setPreco(double preco) { this.preco = preco; }
-
+    public void setNome(String nome) {
+        this.nome = nome; }
+    public double getPreco() {
+        return preco; }
+    public void setPreco(double preco) {
+        this.preco = preco; }
     public int getQuantidadeEstoque() {
         return quantidadeEstoque; }
     public void setQuantidadeEstoque(int quantidadeEstoque) {
