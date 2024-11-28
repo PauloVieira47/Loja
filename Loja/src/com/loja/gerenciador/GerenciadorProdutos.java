@@ -15,5 +15,18 @@ public class GerenciadorProdutos {
         System.out.println("Produto cadastrado com sucesso!");
     }
 
+    // Lista todos os produtos
+    public List<Produto> listarTodos() {
+        return new ArrayList<>(produtos);
+    }
 
+    // Buscar produto por ID
+    public Produto buscarPorId(int id) {
+        for (Produto p : produtos) {
+            if (p.getId() == id) {
+                return p;
+            }
+        }
+        return null;
+    }
 }
